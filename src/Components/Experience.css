@@ -1,0 +1,83 @@
+/* ================== Experience Section ================== */
+
+.experiance-section {
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.experiance-section h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experiance-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Experience Grid */
+.experiance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .experiance-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Experience Card */
+.experiance-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .experiance-card {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.experiance-card:hover {
+    transform: scale(1.1);
+}
+
+/* Experience Image */
+.experiance-image {
+    width: 80px;
+    height: 80;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .experiance-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Experience Title */
+.experiance-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}

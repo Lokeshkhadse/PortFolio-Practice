@@ -1,0 +1,49 @@
+/* ================== About Page Styles ================== */
+
+/* About Section Container */
+.about-section {
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Heading Styles */
+.about-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .about-section h1 {
+        font-size: 32px;
+    }
+}
+
+/* Green Headings */
+.about-section .section-title {
+    color: green;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Paragraph Styles */
+.about-section p,
+.about-section span {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Responsive Padding */
+@media (min-width: 768px) {
+    .about-section {
+        text-align: left;
+        padding: 40px;
+    }
+}

@@ -1,0 +1,294 @@
+/* ================== Navbar Styles ================== */
+
+/* Navbar Container */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+    height: 64px;
+}
+
+/* Navbar Inner Container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+/* Logo & Profile */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Profile Pic Inside Navbar */
+.navbar .profile-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+/* Title */
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.highlight {
+    color: green;
+    font-size: 24px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: black;
+    padding-bottom: 10px;
+    font-size:bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links li {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-links li:hover {
+    transform: scale(1.05);
+    color: green;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    text-align: center;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 64px);
+    list-style: none;
+}
+
+.mobile-menu li {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mobile-menu li:hover {
+    transform: scale(1.05);
+    color: green;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* ================== Home Page Styles ================== */
+
+/* Home Page Container */
+.home-section {
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+/* Home Content */
+.home-section .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .home-section .home-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Text Section */
+.home-section .home-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .home-section .home-text {
+        width: 50%;
+        text-align: left;
+        margin-top: 50px;
+    }
+}
+
+/* Welcome Text */
+.home-section .welcome-text {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Title */
+.home-section .title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+@media (min-width: 768px) {
+    .home-section .title {
+        font-size: 32px;
+    }
+}
+
+/* Typed Text */
+.home-section .typed-text {
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Description */
+.home-section .description {
+    font-size: 14px;
+    text-align: justify;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Social Media Section */
+.home-section .social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .home-section .social-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Available Section */
+.home-section .available,
+.home-section .working-on {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-section .available h1,
+.home-section .working-on h1 {
+    font-weight: bold;
+}
+
+/* Social Links */
+.home-section .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.home-section .social-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.home-section .social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Tech Stack Icons */
+.home-section .tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-section .tech-icon {
+    font-size: 30px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.home-section .tech-icon:hover {
+    transform: scale(1.1);
+    border-color: black;
+}
+
+/* Profile Image (Right Side in Home Section) */
+.home-section .home-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .home-section .home-image {
+        width: 50%;
+        text-align: right;
+    }
+}
+
+/* Rounded Profile Pic Inside Home */
+.home-section .profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .home-section .profile-pic {
+        width: 450px;
+        height: 450px;
+    }
+}
