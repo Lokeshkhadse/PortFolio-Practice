@@ -23,7 +23,7 @@ function Footer() {
           <hr/>
           <div className="footer-text">
             <p>&copy; 2024 Your Company. All rights reserved.</p>
-            <p>Supportive Partner ❤️ Ankush</p>
+            <p>Supportive Partner ❤️ Lokesh</p>
           </div>
         </div>
       </footer>
